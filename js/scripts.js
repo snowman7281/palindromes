@@ -9,12 +9,12 @@ $(document).ready(function(){
       var reverseArray = splitString.reverse();
       var joinArray = reverseArray.join("");
       return joinArray;
-    });
+    };
 
     if(wordInput == reverseString(wordInput)){
-      
+      $("#palindrome").show();
     }else{
-
+      $("#notPalindrome").show();
     }
 
   });
